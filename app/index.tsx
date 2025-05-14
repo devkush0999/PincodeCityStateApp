@@ -79,7 +79,7 @@ export default function HomeScreen() {
             <Ionicons name="call-outline" size={16} color="#7E22CE" />
             <Text style={styles.talkText}>Talk to Expert </Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => setModalVisible(true)}>
+          <TouchableOpacity onPress={() => setModalVisible(true)} style={styles.location}>
             <Ionicons name="location-outline" size={24} color="#7E22CE" />
           </TouchableOpacity>
         </View>
@@ -153,6 +153,7 @@ const styles = StyleSheet.create({
   greeting: { fontSize: 20, fontWeight: '800' },
   talkButton: { flexDirection:'row', backgroundColor: '#EDE9FE', paddingVertical: 6, paddingHorizontal: 12, borderRadius: 10 },
   talkText: { color: '#7E22CE', fontSize: 12 },
+  location:{backgroundColor:'#EDE9FE', padding:5, borderRadius:20},
   locationDisplay: { marginTop: 5 },
   locationText: { fontSize: 12, color: '#7E22CE', fontWeight: '500' },
   date: { color: '#A0A0A0', marginTop: 4, marginBottom: 16 },
